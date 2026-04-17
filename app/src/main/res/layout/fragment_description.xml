@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/rk1yczkvzz2a"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/star_big_on"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/r69h7w2imnyl"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="31dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Описание"
+            />
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cr15bd9d9d9">
+
+            <TextView
+                android:id="@+id/tv_about_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="PEPE БАНК — это современный цифровой банк, созданный для быстрых и удобных финансовых операций. Мы объединяем технологии и простой интерфейс, чтобы управление деньгами было понятным и доступным каждому.\n\nНаши возможности:\n— Мгновенные переводы\n— Кэшбэк\n— Контроль финансов\n\nМы не просто банк. Мы — место, где деньги живут своей жизнью.\nPEPE БАНК — шнеле. просто. ватафа." />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+        
+    </LinearLayout>
+
+
