@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF"
+    android:background="@drawable/fon"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -11,27 +11,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <ImageView
-            android:id="@+id/rk1yczkvzz2a"
+        <LinearLayout
+            android:id="@+id/banktotrans"
             android:layout_width="61dp"
             android:layout_height="61dp"
-            android:layout_marginBottom="41dp"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="10dp"
-            android:src="@android:drawable/star_big_on"
-            android:scaleType="fitXY"
-            />
-        <EditText
-            android:inputType="text"
-            android:hint="1 000 000,00 ₽"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/circle"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageView
+                android:id="@+id/rkexvg38vef"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:src="@drawable/ic_back"
+                android:scaleType="fitXY"
+
+                />
+        </LinearLayout>
+        <TextView
+            android:text="1 000 000,00 ₽"
             android:id="@+id/rlikb0p2otsp"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/color_text"
             android:textSize="32sp"
             android:layout_marginBottom="74dp"
             android:layout_marginHorizontal="29dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/cr15b757575"
+            android:background="@drawable/button_fon"
             android:paddingVertical="36dp"
             android:paddingHorizontal="15dp"
             />
@@ -39,10 +46,10 @@
         <LinearLayout
             android:id="@+id/rsjka8dwj9im"
             android:layout_width="match_parent"
-            android:layout_height="224dp"
+            android:layout_height="210dp"
             android:layout_marginHorizontal="29dp"
             android:layout_marginBottom="80dp"
-            android:background="@drawable/cr15bd9d9d9"
+            android:background="@drawable/button_fon"
             android:orientation="vertical"
             android:paddingHorizontal="28dp"
             android:paddingVertical="32dp">
@@ -55,12 +62,12 @@
                 android:animateLayoutChanges="true"
                 android:orientation="vertical">
 
-                <!-- ШАПКА (Выглядит как твой EditText) -->
+
                 <LinearLayout
                     android:id="@+id/layout_header"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/cr10bfffafa"
+                    android:background="@drawable/text_fon"
                     android:clickable="true"
                     android:focusable="true"
                     android:gravity="center_vertical"
@@ -72,8 +79,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Выберите номер карты"
-                        android:textColor="#808080"
+                        android:hint="Выберите банк"
+                        android:textColor="@color/color_text"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -83,14 +90,14 @@
                         app:tint="#000000" />
                 </LinearLayout>
 
-                <!-- СКРЫТЫЙ СПИСОК (появляется под «полем») -->
+
                 <LinearLayout
                     android:id="@+id/layout_expandable"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:visibility="gone"
                     android:orientation="vertical"
-                    android:background="#F5F5F5"
+                    android:background="@drawable/text_fon"
                     android:padding="10dp">
 
                     <TextView
@@ -115,12 +122,12 @@
                 android:id="@+id/rogc5vsb2ew"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cr10bfffafa"
+                android:background="@drawable/text_fon"
                 android:hint="Сумма от 0,01 до 30 000 000"
                 android:inputType="text"
                 android:paddingHorizontal="17dp"
                 android:paddingVertical="18dp"
-                android:textColor="#000000"
+                android:textColor="@color/color_text"
                 android:textSize="16sp" />
         </LinearLayout>
         <LinearLayout
@@ -136,7 +143,7 @@
             android:orientation="vertical">
             <TextView
                 android:id="@+id/rrgyj1syx48o"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="32sp"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"

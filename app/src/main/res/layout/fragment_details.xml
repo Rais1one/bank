@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF"
+    android:background="@drawable/fon"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -12,22 +12,41 @@
         android:layout_height="350dp"
         android:orientation="vertical"
         >
-        <ImageView
-            android:id="@+id/rk1yczkvzz2a"
+        <LinearLayout
+            android:id="@+id/detaltohis"
             android:layout_width="61dp"
             android:layout_height="61dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="10dp"
-            android:src="@android:drawable/star_big_on"
-            android:scaleType="fitXY"
-            />
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/circle"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageView
+                android:id="@+id/rkexvg38vef"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:src="@drawable/ic_back"
+                android:scaleType="fitXY"
 
-        <ImageView
+                />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="104dp"
             android:layout_height="104dp"
             android:layout_marginBottom="20dp"
-            android:layout_gravity="center"/>
+            android:background="@drawable/circle"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/product"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:src="@drawable/tdesign_shop"
+                android:scaleType="fitXY"
+
+                />
+        </LinearLayout>
 
        <TextView
            android:layout_width="143dp"
@@ -35,12 +54,14 @@
            android:layout_gravity="center"
            android:text="Продукты"
            android:gravity="center"
+           android:textColor="@color/color_text"
            android:textSize="20sp"/>
         <TextView
             android:layout_width="143dp"
             android:layout_height="24dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
+            android:textColor="@color/color_text"
             android:text="14 марта 14:06"
             android:gravity="center"
             android:textSize="14sp"/>
@@ -48,6 +69,7 @@
             android:layout_width="143dp"
             android:layout_height="24dp"
             android:layout_gravity="center"
+            android:textColor="@color/color_text"
             android:text="-276,50"
             android:gravity="center"
             android:textSize="20sp"/>
@@ -57,18 +79,18 @@
         android:layout_height="83dp"
         android:layout_gravity="center"
         android:padding="12dp"
-        android:background="@drawable/cr10bd9d9d9">
+        android:background="@drawable/button_fon">
 
-        <!-- КАРТИНКА (слева по центру) -->
+
         <ImageView
             android:id="@+id/iv_icon"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:src="@android:drawable/ic_menu_gallery" />
+            android:src="@drawable/card_pepe" />
 
-        <!-- ТЕКСТ СВЕРХУ (Покупка по карте) -->
+
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
@@ -77,11 +99,11 @@
             android:layout_marginStart="16dp"
             android:layout_alignTop="@id/iv_icon"
             android:text="Покупка по карте"
-            android:textColor="#000000"
+            android:textColor="@color/color_text"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <!-- ТЕКСТ СНИЗУ (Цифры 4205) -->
+
         <TextView
             android:id="@+id/tv_subtitle"
             android:layout_width="wrap_content"
@@ -91,7 +113,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
             android:text="4205"
-            android:textColor="#808080"
+            android:textColor="@color/color_text"
             android:textSize="14sp" />
 
     </RelativeLayout>

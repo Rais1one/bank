@@ -1,63 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fon">
 
-    <!-- КОНТЕЙНЕР -->
     <FrameLayout
-        android:id="@+id/container"
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:background="@drawable/fon" />
 
-    <!-- КНОПКИ -->
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF">
-
-        <TextView
-            android:id="@+id/btnHome"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="🏠"/>
-
-        <TextView
-            android:id="@+id/btnTransfer"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="💸"/>
-
-        <TextView
-            android:id="@+id/btnHistory"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="📊"/>
-
-        <TextView
-            android:id="@+id/btnBenefits"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="🎁"/>
-
-        <TextView
-            android:id="@+id/btnProfile"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="👤"/>
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_fon"
+        app:itemIconTint="@color/color_text"
+        app:itemTextColor="@color/color_text"
+        app:menu="@menu/bottom_menu" />
 
 </LinearLayout>

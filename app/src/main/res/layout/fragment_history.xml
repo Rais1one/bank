@@ -1,372 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF"
+    android:background="@drawable/fon"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <LinearLayout
+            android:id="@+id/headerLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="#1C029B"
+            android:paddingVertical="13dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titleHistory"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:layout_marginStart="26dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="История" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/historyImage"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:layout_marginEnd="9dp"
+                android:src="@drawable/pepe_money"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:layout_marginHorizontal="23dp"
+            android:layout_marginBottom="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
             <LinearLayout
-                android:id="@+id/rkhua2i9miz"
+                android:id="@+id/outcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_fon"
+                android:orientation="vertical"
+                android:paddingStart="21dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="90dp">
+
+                <TextView
+                    android:id="@+id/priceOutcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:text="2 009"
+                    android:textColor="@color/color_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textOutcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Траты"
+                    android:textColor="@color/color_text"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_fon"
+                android:orientation="vertical"
+                android:paddingStart="21dp"
+                android:paddingTop="17dp"
+                android:paddingEnd="90dp">
+
+                <TextView
+                    android:id="@+id/priceIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:text="5 000"
+                    android:textColor="@color/color_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:text="Доходы"
+                    android:textColor="@color/color_text"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:background="#1C029B"
-                android:paddingVertical="13dp"
-                android:layout_marginBottom="30dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
+
                 <TextView
-                    android:id="@+id/rgc2v65qrdpp"
-                    android:textColor="#FFFFFF"
-                    android:textSize="36sp"
-                    android:layout_marginStart="26dp"
+                    android:id="@+id/todayLabel"
+                    android:textColor="@color/color_text"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginStart="24dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="История"
-                    />
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    />
-                <ImageView
-                    android:id="@+id/r6nq3phk6k4u"
-                    android:layout_width="133dp"
-                    android:layout_height="133dp"
-                    android:layout_marginEnd="9dp"
-                    android:src="@android:drawable/star_big_on"
-                    android:scaleType="fitXY"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/r64nk0sothno"
-                android:layout_width="match_parent"
-                android:layout_height="138dp"
-                android:layout_marginHorizontal="23dp"
-                android:layout_marginBottom="44dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                    android:text="Сегодня" />
 
                 <LinearLayout
-                    android:id="@+id/rex75vleb6g"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/cr15bd9d9d9"
-                    android:orientation="vertical"
-                    android:paddingLeft="21dp"
-                    android:paddingTop="17dp"
-                    android:paddingRight="90dp">
-
-                    <TextView
-                        android:id="@+id/rvcaakqanw08"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="19dp"
-                        android:text="2 009"
-                        android:textColor="#000000"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/rsig7o6jqz6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-1"
-                        android:layout_marginBottom="30dp"
-                        android:text="Траты"
-                        android:textColor="#000000"
-                        android:textSize="15sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-
-                <LinearLayout
-                    android:id="@+id/rex75vleb6g"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/cr15bd9d9d9"
-                    android:orientation="vertical"
-                    android:paddingLeft="21dp"
-                    android:paddingTop="17dp"
-                    android:paddingRight="90dp">
-
-                    <TextView
-                        android:id="@+id/rvcaakqanw08"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="19dp"
-                        android:text="5 000"
-                        android:textColor="#000000"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/rsig7o6jqz6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="30dp"
-                        android:text="Доходы"
-                        android:textColor="#000000"
-                        android:textSize="15sp" />
-                </LinearLayout>
-            </LinearLayout>
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="250dp">
-
-                <LinearLayout
+                    android:id="@+id/itemProducts1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_fon"
+                    android:paddingVertical="20dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginHorizontal="23dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/products1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/tdesign_shop"
+                        android:scaleType="fitXY" />
+
                     <TextView
-                        android:id="@+id/rsxsm3cux848"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:layout_marginBottom="11dp"
-                        android:layout_marginStart="24dp"
+                        android:id="@+id/productsText1"
+                        android:textColor="@color/color_text"
+                        android:textSize="14sp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Сегодня"
-                        />
-                    <LinearLayout
-                        android:id="@+id/rifwx2uuww5h"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:background="@drawable/cr10bd9d9d9"
-                        android:paddingVertical="20dp"
-                        android:layout_marginBottom="13dp"
-                        android:layout_marginHorizontal="23dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/rwawmn5itbcf"
-                            android:textColor="#000000"
-                            android:textSize="14sp"
-                            android:layout_marginStart="51dp"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:text="Продукты"
-                            />
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            />
-                        <TextView
-                            android:id="@+id/rl0w2517vl6a"
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:layout_marginEnd="31dp"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:text="-276,50"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/r11ypdwmwf7z"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:background="@drawable/cr10bd9d9d9"
-                        android:paddingVertical="18dp"
-                        android:layout_marginBottom="29dp"
-                        android:layout_marginHorizontal="23dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/rqw3tkxtmj8a"
-                            android:textColor="#000000"
-                            android:textSize="14sp"
-                            android:layout_marginStart="51dp"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:text="Перевод"
-                            />
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            />
-                        <TextView
-                            android:id="@+id/r5baiqnje15"
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:layout_marginEnd="28dp"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:text="5 000,00"
-                            />
-                    </LinearLayout>
+                        android:text="Продукты" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
                     <TextView
-                        android:id="@+id/rcdqau9eyqdc"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:layout_marginBottom="14dp"
-                        android:layout_marginStart="32dp"
+                        android:id="@+id/amount1"
+                        android:textColor="@color/color_text"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="31dp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="13 марта"
-                        />
-                    <LinearLayout
-                        android:id="@+id/r53y7bbanrbh"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:background="@drawable/cr10bd9d9d9"
-                        android:paddingVertical="18dp"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginHorizontal="23dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/r2bdeuxo87l7"
-                            android:textColor="#000000"
-                            android:textSize="14sp"
-                            android:layout_marginStart="51dp"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:text="Ресторан"
-                            />
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            />
-                        <TextView
-                            android:id="@+id/rr4qnod1fzg"
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:layout_marginEnd="30dp"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:text="-1 276,50"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/retmsddtovpl"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:background="@drawable/cr10bd9d9d9"
-                        android:paddingVertical="13dp"
-                        android:layout_marginHorizontal="23dp"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:id="@+id/r7ea8p2855ls"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_marginStart="17dp"
-                            android:layout_marginEnd="10dp"
-                            android:src="@android:drawable/star_big_on"
-                            android:scaleType="fitXY"
-                            />
-                        <TextView
-                            android:id="@+id/rqtbohyobx2"
-                            android:textColor="#000000"
-                            android:textSize="14sp"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:text="Продукты"
-                            />
-                        <LinearLayout
-                            android:id="@+id/rh3gg8ed3ugh"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-                        </LinearLayout>
-                        <TextView
-                            android:id="@+id/rrcokv2v2nc"
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:layout_marginEnd="30dp"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:text="-456,76"
-                            />
-                    </LinearLayout>
+                        android:text="-276,50" />
 
                 </LinearLayout>
-            </ScrollView>
-            <LinearLayout
-                android:id="@+id/ry3p14qii9pm"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginHorizontal="26dp"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+
                 <LinearLayout
-                    android:id="@+id/ruc5efrfzj7"
-                    android:layout_width="0dp"
-                    android:layout_height="49dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/cr50bd9d9d9"
-                    android:layout_marginEnd="13dp"
-                    android:orientation="vertical">
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/r9783xt80rkr"
-                    android:layout_width="0dp"
-                    android:layout_height="49dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/cr50bd9d9d9"
-                    android:layout_marginEnd="13dp"
-                    android:orientation="vertical">
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/rw5w57psn0y"
-                    android:layout_width="0dp"
+                    android:id="@+id/itemTransfer"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:background="@drawable/cr50bd9d9d9"
-                    android:paddingVertical="7dp"
-                    android:layout_marginEnd="13dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:orientation="vertical">
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_fon"
+                    android:paddingVertical="18dp"
+                    android:layout_marginBottom="29dp"
+                    android:layout_marginHorizontal="23dp"
+                    android:orientation="horizontal">
+
                     <ImageView
-                        android:id="@+id/rqmwhiamkop"
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
-                        android:src="@android:drawable/star_big_on"
-                        android:scaleType="fitXY"
-                        />
+                        android:id="@+id/transfer"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/si_money"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/transferText"
+                        android:textColor="@color/color_text"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Перевод" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/transferAmount"
+                        android:textColor="@color/color_text"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="5 000,00" />
+
                 </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/r548u7uv4bfs"
-                    android:layout_width="0dp"
+
+                <TextView
+                    android:id="@+id/dateLabel"
+                    android:textColor="@color/color_text"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginStart="32dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:background="@drawable/cr50bd9d9d9"
-                    android:paddingVertical="7dp"
-                    android:layout_marginEnd="13dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:id="@+id/rpholdb7qy7"
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
-                        android:src="@android:drawable/star_big_on"
-                        android:scaleType="fitXY"
-                        />
-                </LinearLayout>
+                    android:layout_width="wrap_content"
+                    android:text="13 марта" />
+
                 <LinearLayout
-                    android:id="@+id/rv2amp5kj5x"
-                    android:layout_width="0dp"
-                    android:layout_height="49dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/cr50bd9d9d9"
-                    android:orientation="vertical">
+                    android:id="@+id/itemRestaurant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_fon"
+                    android:paddingVertical="18dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginHorizontal="23dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/restaurant"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_restaurant"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/restaurantText"
+                        android:textColor="@color/color_text"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Ресторан" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/restaurantAmount"
+                        android:textColor="@color/color_text"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="-1 276,50" />
+
                 </LinearLayout>
-        </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/itemProducts2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_fon"
+                    android:paddingVertical="13dp"
+                    android:layout_marginHorizontal="23dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/products2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/tdesign_shop"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/productsText2"
+                        android:textColor="@color/color_text"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Продукты" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/amount2"
+                        android:textColor="@color/color_text"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="-456,76" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 </LinearLayout>

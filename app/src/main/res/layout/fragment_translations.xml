@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF"
+    android:background="@drawable/fon"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -47,31 +47,44 @@
                     android:layout_marginBottom="24dp"
                     android:layout_gravity="center"
                     android:scaleType="fitXY"
-                    android:src="@android:drawable/star_big_on" />
+                    android:src="@drawable/translation_pepe" />
+
+
 
                 <LinearLayout
                     android:id="@+id/r546a5m890y2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="250dp"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginBottom="14dp"
-                    android:background="@drawable/cr15b757575"
+                    android:background="@drawable/button_fon"
                     android:orientation="vertical"
                     android:paddingHorizontal="20dp"
                     android:paddingTop="39dp">
 
-                    <EditText
-                        android:id="@+id/ruwj41af76h"
+                    <LinearLayout
+                        android:id="@+id/transtophone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="24dp"
-                        android:background="@drawable/cr15bfffafa"
-                        android:hint="Номер телефона"
-                        android:inputType="text"
+                        android:background="@drawable/text_fon"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
                         android:paddingHorizontal="19dp"
                         android:paddingVertical="15dp"
-                        android:textColor="#000000"
-                        android:textSize="24sp" />
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Номер телефона"
+                            android:textColor="@color/color_text"
+                            android:textSize="24sp" />
+
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/rqo7ozok2ut"
@@ -82,10 +95,10 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:id="@+id/rbsys9hw20e9"
+                            android:id="@+id/transtobank"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/cr15bd5d5d5"
+                            android:background="@drawable/text_fon"
                             android:orientation="vertical"
                             android:paddingVertical="12dp"
                             android:paddingLeft="12dp"
@@ -97,14 +110,14 @@
                                 android:layout_height="24dp"
                                 android:layout_marginBottom="11dp"
                                 android:scaleType="fitXY"
-                                android:src="@android:drawable/star_big_on" />
+                                android:src="@drawable/mdi_bank" />
 
                             <TextView
                                 android:id="@+id/r3h6rha1he9r"
                                 android:layout_width="70dp"
                                 android:layout_height="wrap_content"
                                 android:text="между банками"
-                                android:textColor="#000000"
+                                android:textColor="@color/color_text"
                                 android:textSize="15sp" />
                         </LinearLayout>
 
@@ -114,10 +127,10 @@
                             android:layout_weight="1" />
 
                         <LinearLayout
-                            android:id="@+id/rr8goo4z9q8s"
+                            android:id="@+id/transtocard"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/cr15bd5d5d5"
+                            android:background="@drawable/text_fon"
                             android:orientation="vertical"
                             android:paddingVertical="12dp"
                             android:paddingLeft="13dp"
@@ -129,98 +142,22 @@
                                 android:layout_height="24dp"
                                 android:layout_marginBottom="9dp"
                                 android:scaleType="fitXY"
-                                android:src="@android:drawable/star_big_on" />
+                                app:tint="@color/color_text"
+                                android:src="@drawable/solar_card" />
 
                             <TextView
                                 android:id="@+id/rwrnsu59f7z"
                                 android:layout_width="65dp"
                                 android:layout_height="wrap_content"
                                 android:text="перевод по карте"
-                                android:textColor="#000000"
+                                android:textColor="@color/color_text"
                                 android:textSize="15sp" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-                nen
 
-                <LinearLayout
-                    android:id="@+id/ry3p14qii9pm"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="26dp"
-                    android:layout_marginTop="30dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:id="@+id/ruc5efrfzj7"
-                        android:layout_width="0dp"
-                        android:layout_height="49dp"
-                        android:layout_marginEnd="13dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/cr50bd9d9d9"
-                        android:orientation="vertical"></LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/r9783xt80rkr"
-                        android:layout_width="0dp"
-                        android:layout_height="49dp"
-                        android:layout_marginEnd="13dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/cr50bd9d9d9"
-                        android:orientation="vertical"></LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/rw5w57psn0y"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="13dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/cr50bd9d9d9"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical"
-                        android:paddingVertical="7dp">
-
-                        <ImageView
-                            android:id="@+id/rqmwhiamkop"
-                            android:layout_width="34dp"
-                            android:layout_height="34dp"
-                            android:scaleType="fitXY"
-                            android:src="@android:drawable/star_big_on" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/r548u7uv4bfs"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="13dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/cr50bd9d9d9"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical"
-                        android:paddingVertical="7dp">
-
-                        <ImageView
-                            android:id="@+id/rpholdb7qy7"
-                            android:layout_width="34dp"
-                            android:layout_height="34dp"
-                            android:scaleType="fitXY"
-                            android:src="@android:drawable/star_big_on" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/rv2amp5kj5x"
-                        android:layout_width="0dp"
-                        android:layout_height="49dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/cr50bd9d9d9"
-                        android:orientation="vertical"></LinearLayout>
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-        </LinearLayout>
 </LinearLayout>
+

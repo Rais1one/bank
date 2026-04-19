@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="button_height_normal">48dp</dimen>
+    <dimen name="button_height_large">64dp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+</resources>

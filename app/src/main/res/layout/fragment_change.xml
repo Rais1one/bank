@@ -1,8 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF"
+    android:background="@drawable/fon"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -11,24 +10,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <ImageView
-            android:id="@+id/rk1yczkvzz2a"
+
+        <LinearLayout
+            android:id="@+id/cahtopro"
             android:layout_width="61dp"
             android:layout_height="61dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="10dp"
-            android:src="@android:drawable/star_big_on"
-            android:scaleType="fitXY"
-            />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle">
+
+            <ImageView
+                android:id="@+id/avatarImage"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:src="@drawable/ic_back"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profileTitle"
+            android:textColor="@color/color_text"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="13dp"
+            android:layout_marginStart="31dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ваши данные" />
 
         <ImageView
+            android:id="@+id/profileImage1"
             android:layout_width="104dp"
             android:layout_height="104dp"
             android:layout_marginBottom="20dp"
-            android:layout_gravity="center"/>
+            android:src="@drawable/pajamas_profile"
+            android:layout_gravity="center" />
 
         <LinearLayout
+            android:id="@+id/changePhotoButton"
             android:layout_width="170dp"
             android:layout_height="48dp"
             android:background="@drawable/photo"
@@ -37,82 +58,80 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/changePhotoText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
+                android:textColor="#FFFFFF"
                 android:text="Изменить фото"
-                android:gravity="center"/>
+                android:gravity="center" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/rsjka8dwj9im"
+            android:id="@+id/formContainer"
             android:layout_width="match_parent"
-            android:layout_height="374dp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="29dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/cr15bd9d9d9"
+            android:background="@drawable/button_fon"
             android:orientation="vertical"
             android:paddingHorizontal="28dp"
             android:paddingVertical="32dp">
 
-            <TextView
-                android:id="@+id/r9xyz0n95dcp"
+            <EditText
+                android:id="@+id/nameInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="25dp"
-                android:background="@drawable/cr10bfffafa"
+                android:background="@drawable/text_fon"
                 android:hint="Имя"
                 android:inputType="text"
                 android:paddingHorizontal="17dp"
                 android:paddingVertical="19dp"
-                android:textColor="#000000"
+                android:textColor="@color/color_text"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/rogc5vsb2ew"
+            <EditText
+                android:id="@+id/lastNameInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cr10bfffafa"
+                android:background="@drawable/text_fon"
                 android:hint="Фамилия"
+                android:inputType="text"
                 android:paddingHorizontal="17dp"
                 android:paddingVertical="18dp"
-                android:textColor="#000000"
+                android:textColor="@color/color_text"
                 android:layout_marginBottom="25dp"
                 android:textSize="16sp" />
 
-
-            <TextView
-                android:id="@+id/rogc5vsb2ew"
+            <EditText
+                android:id="@+id/phoneInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cr10bfffafa"
+                android:background="@drawable/text_fon"
                 android:hint="+7-(921)-574-43-85"
-                android:inputType="text"
+                android:inputType="phone"
                 android:paddingHorizontal="17dp"
                 android:paddingVertical="18dp"
-                android:textColor="#000000"
+                android:textColor="@color/color_text"
                 android:layout_marginBottom="25dp"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/r9xyz0n95dcp"
+            <EditText
+                android:id="@+id/birthDateInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cr10bfffafa"
+                android:background="@drawable/text_fon"
                 android:hint="12.01.2000"
-                android:inputType="text"
+                android:inputType="date"
                 android:paddingHorizontal="17dp"
                 android:paddingVertical="19dp"
-                android:textColor="#000000"
+                android:textColor="@color/color_text"
                 android:textSize="16sp" />
 
-
         </LinearLayout>
-
 
     </LinearLayout>
 
 </LinearLayout>
-
-

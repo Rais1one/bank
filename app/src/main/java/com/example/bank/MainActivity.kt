@@ -1,47 +1,55 @@
 package com.example.bank
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.bank.ui.theme.BankTheme
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import com.example.bank.databinding.ActivityMainBinding
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        if (AccessibilityManager.isLargeTextMode(this)) {
+            resources.configuration.fontScale = 1.3f
+            resources.displayMetrics.scaledDensity = resources.displayMetrics.density * 1.3f
+        }
+
+        ThemeManager.applyTheme(this)
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            BankTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        if (savedInstanceState == null) {
+            replaceRootFragment(MainFragment())
+        }
+
+        binding.bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> replaceRootFragment(MainFragment())
+                R.id.nav_transfers -> replaceRootFragment(TranslationsFragment())
+                R.id.nav_history -> replaceRootFragment(HistoryFragment())
+                R.id.nav_benefit -> replaceRootFragment(BenefitFragment())
+                R.id.nav_profile -> replaceRootFragment(ProfileFragment())
+                else -> false
             }
+            true
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    private fun replaceRootFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, fragment)
+            .commit()
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    BankTheme {
-        Greeting("Android")
+    fun hideBottomNavigation() {
+        binding.bottomNav.visibility = View.GONE
+    }
+
+    fun showBottomNavigation() {
+        binding.bottomNav.visibility = View.VISIBLE
     }
 }
